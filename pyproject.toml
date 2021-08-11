@@ -24,3 +24,22 @@ exclude = '''
 [tool.isort]
 profile = "black"
 multi_line_output = 3
+
+[tool.poetry]
+name = "dumbchess"
+version = "0.1.0"
+description = ""
+authors = ["Frederik Mellbye <frederik.mellbye@me.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+chess = "^1.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+flake8 = "^3.9.2"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
