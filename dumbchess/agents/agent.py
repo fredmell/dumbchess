@@ -9,4 +9,4 @@ class Agent(abc.ABC):
 
     @abc.abstractmethod
     def pick_move(board: chess.Board) -> chess.Move:
-        return
+        """Given the state of the board, choose the move to play"""
